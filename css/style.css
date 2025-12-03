@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* 共通部分
 ---------------------*/
 html {
@@ -20,7 +19,7 @@ img{
 /*レイアウト*/
 .wrapper{
     max-width: 1120px;
-    margin: auto;
+    margin: 0 auto;
     padding: 0 1.5rem;
 }
 .align-center{
@@ -29,14 +28,36 @@ img{
 
 /*見出し*/
 .font-english{
-    font-family: 'Philosopher',sans-serif;
+    font-family: 'Philosopher', sans-serif;
     font-weight: normal;
+}
+.page-title{
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 1.4;
+}
+.cover{
+    background-size: cover;
+    background-position: center bottom;
+    height: 800px;
+}
+.cover-home{
+    background-image: url(../images/cover-home-s.webp);
+}
+.about{
+    max-width: 736px;
+    padding: 0.15rem;
+    margin: 3rem auto 0;
+}
+.about p{
+    margin-bottom: 3rem;                
 }
 .page-title{
     font-size: 3rem;
     text-align: center;
     margin-top: 2rem;
-    line-height: 1.4;
+    line-height:1.4;
 }
 .heading-large{
     font-size: 3rem;
@@ -52,7 +73,7 @@ img{
     color: #fff;
     border-radius: 8px;
     padding: .75rem 1.5rem;
-    transition: 5s;
+    transition: .5s;
 }
 .btn:hover{
     background-color: #0090aa;
@@ -79,22 +100,8 @@ img{
 .main-nav a:hover{
     color: #0bd;
 }
-.cover{
-    background-size: cover;
-    background-position: center bottom;
-    height: 800px;
-}
-.cover-home{
-    background-image: url(../images/cover-home-s.webp);
-}
-.about{
-    max-width: 736px;
-    padding: 0 1.5rem;
-    margin: 3rem auto 0;
-}
-.about p{
-    margin-bottom: 3rem;
-}
+
+
 /*フッター
 -----------------------*/
 .page-footer{
@@ -105,7 +112,7 @@ img{
 }
 .info{
     width: 100%;
-    max-width: 544px;
+    max-width: 5444px;
     margin: auto;
     padding: 0 1.5rem;
     border-spacing: 0;
@@ -122,13 +129,7 @@ img{
 .info td{
     padding: 1rem 0;
 }
-.copyright{
-    background-color: #432;
-    text-align: center;
-    padding: 2rem 0;
-    margin-top: 6rem;
-    color: #fff;
-}
+
 /*デスクトップ版
 ------------------------*/
 @media (min-width: 800px) {
@@ -158,7 +159,6 @@ img{
     /*フッター*/
     .page-footer{
         background-image: url(../images/footer-l.webp);
-        padding-top: 12rem;
     }
     .info th{
         padding-left: 2.5rem;
